@@ -1,4 +1,4 @@
-# Project 2 - Part 1
+# Project 2 
 
 ## Stroke Prediction Dataset
 
