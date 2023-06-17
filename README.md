@@ -4,13 +4,14 @@
 
 Victoria Almazan
 
+# Objective
 
 ### Our goal is to better help our partners understand what is most likley the highest leading causes that attriubte to strokes. We will be diving into understanding key features that will better explain such reason and how to proceed moving forward with better buiness actions.
 
 
  The Source of data was provided by Kaggle.
  
- Brief description of Dataset
+# Brief description of Dataset
  - This data set represented is based on a study on strokes being the leading cause of death globally per the World Health Organization. 
  - This data can be accessed here: https://docs.google.com/spreadsheets/d/e/2PACX('-1vRdlCBU471ijgzSbXzxQOsloENGNY4bKDRKn50EcCpq7iSCZPkk2N2l7PReD7xNiOJAK5brD5TKdK9x/pub?gid=1457616118&single=true&output=csv')
 
@@ -33,12 +34,11 @@ Fig.1
 
 ![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/c0a50c78-011b-4579-ab74-27a56836c25b)
 
-- Figure 2, represents the number of strokes based on age. We can see here that 'Female' is at a higher variance than 'Male'.
+- Figure 2, represents the amount of strokes . The number 1 if the patient had a stroke or 0 if not.
 
 Fig. 2
 
-
-![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/88ddcaa8-e436-4084-92ea-1f703f56306e)
+![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/153f1aa6-39ed-4f8a-b26b-feb5700d40b3)
 
 
 - Figure 3, shows the amount of strokes based on 'Age'. 
@@ -73,5 +73,62 @@ Figure 6, represents smoking status including 'BMI' and 'Avg Glucose Level'.
 Fig. 6
 
 ![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/3f555fd3-7e2d-4f92-b927-2811323797c6)
+
+
+
+# ML Model Training Results
+
+## KNN Model Evaluation
+
+Model best score is 94%. 
+![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/42e740c3-c653-4535-9265-5ec53ef7dbd0)
+
+
+## KNN Model with GridSearch CV
+
+Model improve to 95%
+![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/a5dfc62e-5bb0-4117-a7aa-525b52556fce)
+
+
+## Desicion Tree Classifier 
+
+The Desicion Tree Classifier was the best model out of KNN and LogReg. 
+
+![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/e8d2de4a-2c64-4a7f-b1f9-3c17e0e12430)
+
+## Logistic Regression 
+
+Modeling score 92% 
+
+![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/9e1992b1-aad8-4bc4-aa3a-285793d7bafd)
+
+![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/66012dcc-feea-474e-8a0d-473623cf1efb)
+
+
+## Logistic Regression with GridSearch CV tuning
+
+Modeling improved to 93%.
+
+![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/171c4616-5f18-4220-909b-aa585b5c6093)
+
+![image](https://github.com/valmazan/Project_2_Part_1/assets/126423326/386823b9-4fb6-44db-beaa-b2c9d870f0a0)
+
+
+# Summary 
+
+Based on all of our data, our modeling did have false negatives and false positive, but with tuning we were able to make sure that we adjusted our algoritims to be above 94% accuracy. The impacts of having false negatives and false positives means that any false information would greatly impact the overall health of patients with the recommendation of prescribing medicines and treatments that can interfere features such as heart disease, avg gluecose level, smoking status and bmi. Additionally taking into account other features such as gender and age help us better understand the stroke attributes. 
+
+# Recommendation 
+
+ - My recommendations are to continue to collect data to have continous understanding base line of changing data but additionally I recommend adding a column indicating if patient is on a medication plan. This would also help understand if certain medical treatments are effective in preventing strokes. 
+ - Additionally, based on our models we can deduce that 93% of our data will predict the likley hood of patients will have a stroke based on features such as age, smoking status, bmi, heart disease and avg glucose level.
+   
+
+
+# Contact info for Collaboration 
+
+### For any inquires regarding this data set or future collaboration please feel free to reach out via email at valmazan12@gmail.com. Visit my Github repository! 
+
+
 
 
